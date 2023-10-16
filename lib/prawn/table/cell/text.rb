@@ -66,7 +66,7 @@ module Prawn
         #
         def draw_content
           with_font do
-            @pdf.move_down((@pdf.font.line_gap + @pdf.font.descender)/2)
+            # @pdf.move_down((@pdf.font.line_gap + @pdf.font.descender)/2)
             with_text_color do
               text_box(:width => spanned_content_width + FPTolerance,
                        :height => spanned_content_height + FPTolerance,
